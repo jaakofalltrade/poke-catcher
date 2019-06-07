@@ -1,10 +1,15 @@
+@font-face {
+    font-family: 'Return of Ganon';
+    src: url("../fonts/return-of-ganon.regular.ttf");
+}
+
 * {
     padding: 0px;
     margin: 0;
 }
 
 body {
-    
+    font-family: 'Return of Ganon', sans-serif;
 }
 
 #main {
@@ -22,15 +27,52 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
     min-height: 70px;
-    background-color: red;
+    background-color: #EF5350;
     box-shadow: 1px 3px 4px 0px rgba(0, 0, 0, 0.4);
 }
 
-.navbar img {
-    margin-left: 150px;
+.main-container {
+    position: relative;
+    top: 40px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 900px;
+    margin: auto auto;
+    height: auto;
+    min-height: 600px;
+}
+
+.cont-1 {
+    display: grid;
+    grid-template-rows: 70% 30%;
+    grid-gap: 10;
+}
+
+.cont-2 {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-gap: 30;
+}
+
+.wrapper {
+    margin: 10px;
+    border: 4px solid #ffffff;
+}
+
+.wrapper .header {
+    width: 100%;
+    height: auto;
+    min-height: 60px;
+    background-color: red;
+}
+
+.normal {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-left: 10px;
+    margin-right: 10px;
 }
