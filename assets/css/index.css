@@ -22,6 +22,7 @@ p, label {
     height: 100vh;
     background-image: url('../images/background1.gif');
     background-size: cover;
+    background-position: center;
 }
 
 #main .overlay {
@@ -50,10 +51,10 @@ p, label {
     top: 30px;
     display: grid;
     grid-template-columns: 60% 40%;
-    width: 900px;
+    width: 930px;
     margin: auto auto;
     height: auto;
-    min-height: 600px;
+    min-height: 650px;
 }
 
 .nav-control {
@@ -61,7 +62,7 @@ p, label {
     top: 20px;
     display: grid;
     grid-template-rows: 35% 65%;
-    width: 900px;
+    width: 930px;
     margin: auto auto;
     height: auto;
     min-height: 200px;
@@ -88,11 +89,12 @@ p, label {
 }
 
 .wrapper-control ul select {
+    cursor: pointer;
     font-family: 'Return of Ganon';
     letter-spacing: 1.5px;
-    font-size: 18px;
+    font-size: 17px;
     margin-right: 5px;
-    min-width: 130px;
+    min-width: 50px;
     padding: 3px;
 }
 
@@ -101,7 +103,8 @@ p, label {
     font-size: 18px;
     font-family: 'Return of Ganon';
     height: 30px;
-    width: 20%;
+    cursor: pointer;
+    width: 18%;
 }
 
 .cont-1 {
@@ -134,8 +137,94 @@ p, label {
     font-size: 25px;
 }
 
+#pokemon {
+    border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+    animation: blink-caret 1s step-end infinite;
+}
+
+.img-bod {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    min-height: 240px;
+}
+
+.img-bod img {
+    cursor: pointer;
+    width: 270px;
+    height: 270px;
+}
+
+.stat-bod {
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+}
+
+.stat-bod ul li {
+    padding-left: 30px;
+    list-style-type: none;
+    letter-spacing: 1.5px;
+    line-height: 19px;
+    font-size: 18px;
+    font-family: 'Return of Ganon';
+}
+
+.capt-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+}
+
+#capture-btn {
+    width: 65%;
+    height: 40px;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    font-family: 'Return of Ganon';
+    cursor: pointer;
+}
+
+.captured-body {
+    width: 90%;
+    height: auto;
+    min-height: 400px;
+    position: relative;
+    margin: auto auto;
+}
+
+.capt-inner-body {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 90px;
+}
+
+.capt-inner-body img {
+    width: 90px;
+    height: 90px;
+    float: left;
+}
+
+.capt-inner-body p {
+    margin-left: 20px;
+    font-size: 20px;
+    float: right;
+}
+
 .normal {
     background-color: rgba(0, 0, 0, 0.3);
     margin-left: 10px;
     margin-right: 10px;
+}
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255) }
 }

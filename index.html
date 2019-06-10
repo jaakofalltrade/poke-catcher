@@ -11,8 +11,9 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/index.css">
-    <script src="assets/js/app.js"></script>
     <script src="assets/js/pokeApi.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/effects.js"></script>
 </head>
 <body>
     <div id="main">
@@ -29,11 +30,11 @@
                             </select>
                             <label for="location">Location: </label>
                             <select name="location" id="location">
-                                <option value="1">Sunder</option>
+                                <option value="0">Empty!</option>
                             </select>
                             <label for="area">Area: </label>
                             <select name="area" id="area">
-                                <option value="1">Wow</option>
+                                <option value="0">Empty!</option>
                             </select>    
                         </ul>
                         <button class="explore-btn">Explore</button>
@@ -41,22 +42,35 @@
                 </div>
                 <div class="nav-inner-control normal">
                     <div class="wrapper-control">
-                        <div class="header"><p id="demo" class="header-text">Click "explore" to start searching for a Pokemon...</p></div>
+                        <div class="header"><p id="report" class="header-text">Click "explore" to start searching for a Pokemon...</p></div>
                     </div>
                 </div>
             </div>
             <div class="main-container">
                 <div class="cont-1 normal">
                     <div class="wrapper">
-                        <div class="header"><p id="demo" class="header-text">You found a Pikachu...</p></div>
+                        <div class="header"><p id="pokemon" class="header-text"></p></div>
+                        <div class="img-bod">
+                        </div>
+                        <div class="capt-btn">
+                            
+                        </div>
                     </div>
                     <div class="wrapper">
-                        <div class="header"><p id="demo" class="header-text">Statistics:</p></div>
+                        <div class="header"><p id="stat" class="header-text">Statistics:</p></div>
+                        <div class="stat-bod">
+                            <ul class="inner-stat">
+                                
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="cont-2 normal">
                     <div class="wrapper">
                         <div class="header"><p id="demo" class="header-text">Captured Pokemon:</p></div>
+                        <div class="captured-body">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
